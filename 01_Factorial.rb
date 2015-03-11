@@ -8,6 +8,8 @@ def fact(n)
 	end
 end
 
-#ARGV[0] recibe el argumento con el que se llama al programa
-#to_i lo convierte a entero
-print fact(ARGV[0].to_i), "\n"
+#Modificado para pedir el número por pantalla
+print "Introduce el numero: "
+n = STDIN.gets
+n.chop!
+print "El factorial es: ", fact(n.to_i)
